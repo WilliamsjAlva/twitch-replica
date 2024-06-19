@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    background-color: #18181B;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    justify-content: flex-start;
+}
+
+nav ul {
+    display: flex;
+    position: fixed;
+    background-color: #18181B;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+    margin-right: 15px;
+}
+
+nav li{
+    width: 100%;
+    list-style: none;
+    margin-right: 15px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 20px;
+    padding: 0px 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+svg{
+    fill: white;
+}
+
+
+#nav-header{
+    z-index: 7;
+}
+
+#Twitch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Twitch abbr li p{
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#Twitch abbr li p:hover{
+    font-weight: bold;
+    color: #BF94FF;
+    cursor: pointer;
+}
+
+#exploretitle{
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+#explore-logo:hover{
+    background-color: #35353B;
+}
+
+#more-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+#more-div:hover{
+    background-color: #35353B;
+    border-radius: 5px;
+}
+
+#login{
+    background-color: #36363e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#login:hover{
+    background-color: #42424a;
+}
+
+#signup{
+    margin-bottom: 10px;
+    background-color: #A970FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px
+}
+
+#signup:hover{
+    background-color:#772CE8 ;
+}
+#user-icon{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#user-icon:hover{
+    background-color: #35353B;
+    border-radius: 5px;
+}
+
+#user-icon:hover{
+    cursor: pointer;
+}
+
+#prime-logo{
+    margin-bottom: 4px;
+    padding: 5px;
+}
+
+#prime-logo:hover{
+    background-color: #35353B;
+    border-radius: 5px;
+}
+
+#search-bar{
+    display: flex;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #18181B;
+    border: 1px solid #67676B;
+    width: 330px;
+    height: 35px;
+    color: white;
+    padding: 12px;
+    margin-left: 30px;
+}
+
+#magnifying-glass{
+    margin-top: 6px;
+}
+
+#magnifying-glass:hover{
+    background-color: #35353B;
+}
+
+#search-bar:hover{
+    border: 3px solid #67676B;
+    padding: 10px;
+}
+
+#search-bar:focus{
+    border: 5px solid #A970FF;
+    padding: 8px;
+}
+
+#search-button{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+}
+
+#recommended-channels{
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 6;
+    top: 40px;
+    left: 0;
+    background-color: #1F1F23;
+    padding-top: 20px;
+    padding-left: 2px;
+}
+
+#expand-logo{
+    width: 23px;
+    padding-left: 8px;
+    margin-bottom: 10px;
+}
+
+#recommended-channels ul li:hover{
+    cursor: pointer;
+}
+
+#video-vector-logo{
+    width: 17px;
+    padding-left: 8px;
+}
+
+#div-search-bar{
+    display: flex;
+}
+
+#fixed-message {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #451093;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 60px;
+    padding-left: 20px;
+    align-items: center;
+    color: white;
+    z-index: 8;
+    justify-content: space-between;
+}
+
+#fixed-message img {
+    margin-right: 10px;
+}
+
+#fixed-message div {
+    display: flex;
+    align-items: flex-start;
+}
+
+#fixed-message .text{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#signup-fixed{
+    margin-left: 350px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px
+}
+
+#signup-fixed:hover{
+    background-color: #EDE8F4;
+}
+
+/*Main directos*/
+
+#description{
+    display: flex;
+    flex-direction: row;
+}
+
+#section1{
+    width: 100%;
+    height: 100%;
+    background-color: #67676B;
+}
+
+#section2{
+    background-color: #18181B;
+    width: 278px;
+    height: 100%;
+}
+
+#endy-picture{
+    float: left;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#channel-name{
+    color: #BF94FF;
+}
+
+#channel-name:hover{
+    color: #A970FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#gta-v{
+    color: #BF94FF;
+}
+
+#gta-v:hover{
+    color: #A970FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#endy-text p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+#channel-name{
+    font-weight: bold;
+}
+
+#titles-texts{
+    margin-top: 10px;
+}
+
+
+/*videos*/
+
+#videos img {
+    transition: all 0.3s ease-in-out;
+}
+
+#videos img:hover {
+    transform: translate(-10px, -10px);
+}
+
+
+#videos{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 20px;
+}
+
+#videos{
+    padding-top: 420px;
+    padding-left: 90px;
+}
+
+#videos div{
+    width: 370px;
+    height: 300px;
+    margin-top: -280px;
+    margin-left: -25px;
+    background-color: #000000;
+    color: white;
+}
+
+#channels-would-you-like{
+    color: white;
+    font-size: 20px;
+}
+
+#live-channels-span{
+    color: #BF94FF;
+}
+#live-channels-span:hover{
+    color: #A970FF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.live img{
+    border: none;
+    border-radius: 50%;
+}
+
+.live{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.live .live-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.live section p{
+    margin-left: 18px;
+}
+
+.live-title{
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+}
+
+.live-title p{
+    margin-top: 2px;
+}
+
+.channel-name{
+    color: #9E9EA9;
+    cursor: pointer;
+}
+
+.live-title-here:hover{
+    cursor: pointer;
+    color: #9B67E9;
+    
+}
+
+.game-name{
+    color: #9E9EA9;
+    cursor: pointer;
+}
+
+.game-name:hover{
+    cursor: pointer;
+    color: #9B67E9;
+    
+}
+
+.button-container{
+    margin-left: 14px;
+    margin-top: 5px;
+}
+
+.button-container button{
+    border: none;
+    border-radius: 50px;
+    padding: 4px;
+    background-color: #2e2e34;
+    color: #ADADB8;
+    cursor: pointer;
+}
+
+.button-container button:hover{
+    background-color: #35353B;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*principal*/
+
+.buttons-endy button{
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #2e2e34;
+    color: #ADADB8;
+    cursor: pointer;
+}
+
+.buttons-endy button:hover{
+    background-color: #35353B;
+}
+
+#endy-description{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#main-videos{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+
+#main-videos div:nth-child(1){
+    width: 690px;
+    height: 280px;
+    transform: translate(-50%, -80%);
+    z-index: 4;
+}
+
+
+#main-videos div:nth-child(2){
+    width: 400px;
+    height: 220px;
+    background-color: red;
+    transform-origin: 50% 50%;
+    transform: translate(-165%, -80%);
+    z-index: 3;
+    transition: all 0.1s linear;
+    filter: brightness(0.5);
+}
+
+#main-videos div:nth-child(2):hover{
+    transform: translate(-165%, -80%) scale(1.03);
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+#main-videos div:nth-child(3){
+    width: 400px;
+    height: 220px;
+    background-color: blue;
+    transform: translate(-380%, -80%);
+    z-index: 3;
+    transform-origin: 50% 50%;
+    transition: all 0.1s linear;
+    filter: brightness(0.5);
+}
+
+#main-videos div:nth-child(3):hover{
+    transform: translate(-380%, -80%) scale(1.03);
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+#main-videos div:nth-child(4){
+    filter: brightness(0.5);
+    width: 380px;
+    height: 180px;
+    background-color: purple;
+    transform: translate(-367%, -95%);
+    z-index: 1;
+    transform-origin: 50% 50%;
+    transition: all 0.1s linear;
+}
+
+#main-videos div:nth-child(4):hover{
+    transform: translate(-367%, -95%) scale(1.03);
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+#main-videos div:nth-child(5){
+    width: 380px;
+    height: 180px;
+    background-color: peru;
+    transform: translate(-617%, -95%);
+    z-index: 1;
+    transform-origin: 50% 50%;
+    transition: all 0.1s linear;
+    filter: brightness(0.5);
+}
+
+#main-videos div:nth-child(5):hover{
+    transform: translate(-617%, -95%) scale(1.03);
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+
+
+.text-center {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: -200px;
+    color: #AA84E2;
+    margin-left: 550px;
+    width: 120px;
+    height: 25px;
+    padding-top: px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.text-center:hover{
+    color: white;
+    background-color: #2F2F35;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+@media (min-width : 740px){
+    #explore-logo{
+        display: none;}
+    #magnifying-glass{
+        display: none;
+    }
+}
+
+@media (max-width : 740px){
+    #search-bar{
+        display: none;
+    }
+    #exploretitle{
+        display: none;}
+    #search-button{
+        display: none;
+    }    
+    #discover-text{
+        display: none;
+    }
+}
+
+.sidebaricons{
+    width: 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 25px;
+}
